@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").bind({
+    click:function(){$("p").slideToggle();},
+    mouseover:function(){$("body").css("background-color", "lightblue");},  
+    mouseout:function(){$("body").css("background-color", "lightgreen");}  
+  });
+});
+</script>
+</head>
+<body>
+<pre style="background-color: yellow">Note: Using an event map</pre>
+<p>This is a paragraph.</p>
+
+<button>Click me!</button>
+
+</body>
+</html>
