@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).slideToggle();
+  });
+  $("button").click(function(){
+    $("p").unbind();
+  });
+});
+</script>
+</head>
+<body>
+<pre style="background-color: yellow">The unbind() method & the off() method removes event handlers from selected elements.<br>This remove all or selected event handlers, or stop specified functions from running when the event occurs.<br>Also unbind event handlers using an event object.<br>This is used to unbind an event from within itself (like removing an event handler after the event has been triggered a certain number of times).</pre>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click any p element to make it disappear.</p>
+
+<button>Remove all event handlers for all p elements</button>
+
+</body>
+</html>
